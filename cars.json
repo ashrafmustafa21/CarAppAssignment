@@ -1,0 +1,27 @@
+[
+  {
+    "id": -1249648356797515039,
+    "make": "StringProperty [bean: tornadofx.ViewModel@2e42c654, value: BMW]",
+    "model": "StringProperty [bean: tornadofx.ViewModel@2e42c654, value: 520d]"
+  },
+  {
+    "id": -2480794852359513507,
+    "make": "StringProperty [bean: tornadofx.ViewModel@530ccf9b, value: AUDI]",
+    "model": "StringProperty [bean: tornadofx.ViewModel@530ccf9b, value: A5]"
+  },
+  {
+    "id": -5669304456415700791,
+    "make": "StringProperty [bean: tornadofx.ViewModel@530ccf9b, value: VW]",
+    "model": "StringProperty [bean: tornadofx.ViewModel@530ccf9b, value: Passat]"
+  },
+  {
+    "id": 152577519418855482,
+    "make": "Bmw",
+    "model": "318d"
+  },
+  {
+    "id": -1077637081984233850,
+    "make": "Mercedes",
+    "model": "E200"
+  }
+]
