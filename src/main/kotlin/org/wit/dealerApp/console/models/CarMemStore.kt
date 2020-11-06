@@ -33,6 +33,7 @@ class CarMemStore : CarStore {
         if (foundCar != null) {
             foundCar.make = car.make
             foundCar.model = car.model
+            foundCar.year = car.year
         }
     }
 

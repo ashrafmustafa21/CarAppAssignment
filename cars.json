@@ -1,27 +1,20 @@
 [
   {
-    "id": -1249648356797515039,
-    "make": "StringProperty [bean: tornadofx.ViewModel@2e42c654, value: BMW]",
-    "model": "StringProperty [bean: tornadofx.ViewModel@2e42c654, value: 520d]"
-  },
-  {
-    "id": -2480794852359513507,
-    "make": "StringProperty [bean: tornadofx.ViewModel@530ccf9b, value: AUDI]",
-    "model": "StringProperty [bean: tornadofx.ViewModel@530ccf9b, value: A5]"
-  },
-  {
-    "id": -5669304456415700791,
-    "make": "StringProperty [bean: tornadofx.ViewModel@530ccf9b, value: VW]",
-    "model": "StringProperty [bean: tornadofx.ViewModel@530ccf9b, value: Passat]"
-  },
-  {
-    "id": 152577519418855482,
-    "make": "Bmw",
-    "model": "318d"
-  },
-  {
-    "id": -1077637081984233850,
+    "id": 6656321642509718028,
     "make": "Mercedes",
-    "model": "E200"
+    "model": "520d",
+    "year": "2016"
+  },
+  {
+    "id": 3809058022866429513,
+    "make": "Rnault",
+    "model": "Scenic",
+    "year": "2017"
+  },
+  {
+    "id": -4832361872959413131,
+    "make": "Audi",
+    "model": "A5",
+    "year": "2019"
   }
 ]

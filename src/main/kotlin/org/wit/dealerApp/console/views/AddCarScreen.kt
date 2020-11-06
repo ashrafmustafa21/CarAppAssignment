@@ -4,12 +4,12 @@ import javafx.beans.property.SimpleStringProperty
 import javafx.geometry.Orientation
 import org.wit.dealerApp.console.controllers.CarUIController
 import tornadofx.*
-import kotlin.reflect.KClass
 
 class AddCarScreen : View("Add car") {
     val model = ViewModel()
     val _make = model.bind { SimpleStringProperty() }
     val _model = model.bind { SimpleStringProperty() }
+    val _year = model.bind { SimpleStringProperty() }
     val carUIController: CarUIController by inject()
 
     override val root = form {
@@ -21,13 +21,16 @@ class AddCarScreen : View("Add car") {
             field("Model") {
                 textfield(_model).required()
             }
+            field("Year") {
+                textfield(_year).required()
+            }
             button("Add") {
                 enableWhen(model.valid)
                 isDefaultButton = true
                 useMaxWidth = true
                 action {
                     runAsyncWithProgress {
-                        carUIController.add(_make.toString(),_model.toString())
+                        carUIController.add(_make.toString(),_model.toString(),_year.toString())
 
                     }
                 }
@@ -46,6 +49,7 @@ class AddCarScreen : View("Add car") {
     override fun onDock() {
         _make.value = ""
         _model.value = ""
+        _year.value = ""
         model.clearDecorators()
     }
 }

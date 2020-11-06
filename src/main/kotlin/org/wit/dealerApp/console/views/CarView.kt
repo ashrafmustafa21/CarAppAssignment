@@ -49,24 +49,30 @@ class CarView {
         car.make = readLine()!!
         print("Enter a model : ")
         car.model = readLine()!!
+        print("Enter the year of manufacture : ")
+        car.year = readLine()!!
 
-        return car.make.isNotEmpty() && car.model.isNotEmpty()
+        return car.make.isNotEmpty() && car.model.isNotEmpty() && car.year.isNotEmpty()
     }
 
     fun updateCarData(car : CarModel) : Boolean {
 
         var tempMake: String?
         var tempModel: String?
+        var tempYear: String?
 
         if (car != null) {
             print("Enter a new make for [ " + car.make + " ] : ")
             tempMake = readLine()!!
             print("Enter a new model for [ " + car.model + " ] : ")
             tempModel = readLine()!!
+            print("Enter a new year of manufature for [ " + car.year + " ] : ")
+            tempYear = readLine()!!
 
-            if (!tempMake.isNullOrEmpty() && !tempModel.isNullOrEmpty()) {
+            if (!tempMake.isNullOrEmpty() && !tempModel.isNullOrEmpty() && !tempYear.isNullOrEmpty()) {
                 car.make = tempMake
                 car.model = tempModel
+                car.year = tempYear
                 return true
             }
         }
